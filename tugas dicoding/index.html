@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task List 2021</title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<header>
+		<h1>Gramedia 2023</h1>
+		<form id="new-task-form">
+		<div class="judul">
+			<label for="inputBookJudul">Judul</label>
+			<input type="text" name="new-task-input" id="new-task-input" placeholder="Name judul?" />
+		</div>
+		<div class="penulis">
+			<label for="inputBookAuthor">Penulis</label>
+			<input type="text" name="new-task-inputpenulis" id="new-task-inputpenulis" placeholder="Name penulis?" />
+		</div>
+		<div class="input_inline">
+			<label for="inputBookIsComplete">Selesai dibaca</label>
+			<input id="inputBookIsComplete" type="checkbox">
+		</div>
+		<div class="date">
+			<label for="inputBookdate">date</label>
+			<input type="date" 	name="new-task-inputdate" id="new-task-inputdate" placeholder="What do you have planned?" />
+		</div>
+		<button id="new-task-submit" type="submit">Submit</button>
+		<input type="text" id="carilist" placeholder="cari buku...">
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Buku Belum Dibaca</h2>
+			<div id="tasks">
+			</div>
+		</section>
+		<section class="task-list">
+			<h2>Buku sudah dibaca</h2>
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
